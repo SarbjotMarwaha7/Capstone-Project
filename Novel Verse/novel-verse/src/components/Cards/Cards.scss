@@ -1,0 +1,104 @@
+/*Cards.scss*/
+
+// to remove link under line
+a {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Changes link color to black */
+}
+
+/* Styles for the top-rated container */
+.top-rated-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Wrapper for the cards with horizontal scrolling */
+.cards-wrapper {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+  margin-bottom: 75px;
+}
+
+/* Individual card styles */
+.card {
+  flex: 0 0 auto;
+  width: 100px;
+  margin: 10px;
+  padding: 0px;
+  border-radius: 6px;
+  text-align: center;
+  height: 320px;
+  margin-left: 40px;
+}
+
+/* Styling for the card images */
+.card img {
+  max-width: 100px;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+/* Styling for the text within the cards */
+.card p {
+  margin-top: 10px;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+/* Styles for the heading */
+h2 {
+  font-size: 20px;
+  margin: 20px;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet-specific styles */
+  .novel-card {
+    margin-top: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Media query for desktops */
+@media screen and (min-width: 1024px) {
+  /* Desktop-specific styles */
+  .novel-card {
+    margin-top: 350px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .card img {
+    max-width: 175px;
+    max-height: 275px;
+  }
+  .card p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .cards-wrapper {
+    overflow-x: auto;
+  }
+
+  /* Styling the scrollbar */
+  .cards-wrapper::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+    background-color: #111;
+  }
+
+  /* Styling the scrollbar thumb (the draggable scrolling handle) */
+  .cards-wrapper::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 5px;
+  }
+}

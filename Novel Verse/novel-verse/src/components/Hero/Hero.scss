@@ -1,0 +1,100 @@
+/* Hero.scss */
+
+/* Styling for the hero section */
+.hero {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+
+  /* Styling for the hero image */
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #000000;
+    opacity: 0.65;
+  }
+
+  /* Styling for the hero text */
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Styling for the main heading */
+  h1 {
+    text-shadow: 2px 2px 2px #222;
+    font-size: 15px;
+  }
+
+  /* Styling for the paragraph */
+  p {
+    text-shadow: 1px 1px 1px #222;
+    font-size: 10px;
+  }
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    height: 300px;
+    /* Styling for the hero image on tablets */
+    .hero-image {
+      border: 4px solid #000000;
+    }
+  }
+
+  /* Styling for the hero text on tablets */
+  .hero-text {
+    border-width: 4px;
+    padding: 30px;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Media query for desktops */
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Styling for the hero image on desktops */
+    .hero-image {
+      border: 4px solid #000000;
+      width: 70%;
+      height: auto;
+      margin-top: 260px;
+      border-left-width: 290px;
+      border-right-width: 290px;
+    }
+  }
+
+  /* Styling for the hero text on desktops */
+  .hero-text {
+    border-width: 4px;
+    padding: 30px;
+    margin-top: 100px;
+
+    h1 {
+      font-size: 80px;
+    }
+
+    p {
+      font-size: 60px;
+    }
+  }
+}

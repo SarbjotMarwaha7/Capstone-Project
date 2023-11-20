@@ -1,0 +1,106 @@
+/* Footer.scss */
+
+/* Base styles for the footer */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+
+  /* Styling for the footer title */
+  .footer-title a {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* Styling for the footer links section */
+  .footer-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    /* Styling for individual footer links */
+    .footer-link {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 5px;
+
+      /* Hover effect without underline */
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  /* Styling for the footer icons section */
+  .footer-icons {
+    display: flex;
+    margin-top: 15px;
+
+    /* Styling for individual anchor tags containing icons */
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+
+      /* Styling for the icon element */
+      i {
+        font-size: 24px;
+      }
+
+      /* Hover effect for changing color */
+      &:hover {
+        color: #bbb;
+      }
+    }
+  }
+
+  /* Styling for the footer divider */
+  .footer-divider {
+    border-top: 1px solid #222;
+    margin: 20px 0;
+  }
+
+  /* Styling for the footer copyright text */
+  .footer-copyright {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  .footer {
+    /* Adjustments for desktop */
+    display: flex;
+    flex-direction: column;
+
+    .footer-title {
+      margin-left: 300px;
+    }
+
+    /* Styling for the links section in desktop view */
+    .footer-links {
+      display: flex;
+      margin-top: 10px;
+      margin-left: 300px;
+    }
+
+    /* Styling for the icons section in desktop view */
+    .footer-icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 10px;
+      margin-right: 300px;
+    }
+
+    .footer-divider {
+      margin-right: 300px;
+      margin-left: 300px;
+    }
+  }
+}

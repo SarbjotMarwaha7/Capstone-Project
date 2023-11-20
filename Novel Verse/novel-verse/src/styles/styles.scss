@@ -1,0 +1,25 @@
+/* styles.scss */
+
+/* Define font-face declarations for Poppins font family */
+
+/* Font-face for Poppins Regular (font-weight: 400) */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+}
+
+/* Font-face for Poppins Bold (font-weight: 700) */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold weight */
+}
+
+/* Apply to the entire site */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+}
